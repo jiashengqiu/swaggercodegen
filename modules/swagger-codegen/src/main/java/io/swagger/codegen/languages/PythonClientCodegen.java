@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 public class PythonClientCodegen extends DefaultCodegen implements CodegenConfig {
-    protected String module = "SwaggerPetstore";
+    protected String module = "ChorusApi";
     protected String invokerPackage;
     protected String eggPackage;
 
@@ -63,7 +63,7 @@ public class PythonClientCodegen extends DefaultCodegen implements CodegenConfig
 
         supportingFiles.add(new SupportingFile("README.mustache", eggPackage, "README.md"));
         supportingFiles.add(new SupportingFile("setup.mustache", eggPackage, "setup.py"));
-        supportingFiles.add(new SupportingFile("api_client.mustache", invokerPackage, "api_client.py"));
+        supportingFiles.add(new SupportingFile("api_client1.mustache", invokerPackage, "api_client.py"));
         supportingFiles.add(new SupportingFile("rest.mustache", invokerPackage, "rest.py"));
         supportingFiles.add(new SupportingFile("configuration.mustache", invokerPackage, "configuration.py"));
         supportingFiles.add(new SupportingFile("__init__package.mustache", invokerPackage, "__init__.py"));
